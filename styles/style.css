@@ -4,6 +4,8 @@
   font-family: "Arial Rounded MT", sans-serif;
 }
 
+/* #09212d */ /* best color */
+
 body
 {
   background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#09212d)) fixed;
@@ -17,6 +19,7 @@ body
 #txt
 {
   text-align: center;
+  opacity: 95%;
 }
 
 h1
@@ -40,6 +43,7 @@ h2
   background-color: transparent;
   border-radius: 50%;
   border: 10px dotted lightblue;
+  opacity: 95%;
   position: relative;
   margin-left: 200px;
 }
@@ -78,7 +82,7 @@ h2
   left: 50%;
   width: 10px;
   height: 50%;
-  background-color: #252525;
+  background-color: transparent;
   transform-origin: bottom;
   transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
   border: 0px solid transparent;
@@ -105,7 +109,7 @@ h2
   width: 2px;
   height: 45%;
   background-color: red;
-  transition: 0.95s;
+  transition: 0.50s;
 }
 
 .clock .hand.minute
@@ -114,7 +118,8 @@ h2
   height: 45%;
   background-color: transparent;
   border: 3px solid #fff;
-  transition: 0.95s;
+  transition: 0.50s;
+  
 }
 
 .clock .hand.hour
@@ -123,5 +128,5 @@ h2
   height: 25%;
   background-color: transparent;
   border: 3px solid #fff;
-  transition: 0.95s;
+  transition: 0.50s;
 }
